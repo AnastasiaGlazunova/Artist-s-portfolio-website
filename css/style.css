@@ -1,0 +1,132 @@
+body, p {
+    /* ширина в процентах */
+    width: 100%;
+    /* внешние отступы. Обнуляем */
+    margin: 0;
+    /* внутренние отступы. Обнуляем */
+    padding: 0;
+
+    font-family: 'Courier New', Courier, monospace;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    outline: none;
+}
+
+p {
+    /* обнуляем изначальные внутренние и внешние отступы у элементов */
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /* обнуляем изначальные внутренние и внешние отступы у элементов */
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    /* убираем изначальные стили у ссылки */
+    text-decoration: none;
+    outline: none;
+    color: black
+}
+.nav {
+    height: 100vh;
+    width: 200px;
+    position: fixed;
+}
+
+nav {
+    margin-top: 200px;
+    margin-left: 20px;
+}
+
+nav ul {
+    /* убираем изначальный стиль у листа */
+    list-style: none;
+    margin: 0;   
+    padding: 0;   
+}
+
+nav li {
+    margin-top: 10px;  
+}
+
+.nav_link {
+    font-size: 20px;
+    color: rgba(37,37,37,1);
+}
+
+.content {
+    margin-left: 190px;
+    /* это фоновый цвет блока */
+    background-color: rgb(247, 245, 245);
+    min-height: 100vh;
+}
+
+img {
+    /* чтобы картинка адаптивно заполняла экран */
+    object-fit: cover; 
+    max-width: 100%; 
+}
+
+.logo {
+    /* указываем , что ссылка - блочный элемент */
+    display: block;
+    /* отступ слева на 20px(пикселей) */
+    margin-left: 20px;
+    /* отступ сверху на 30px(пикселей) */
+    margin-top: 30px;
+
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+}
+
+.content_header {
+    /* внутренние отступы со всех сторон(лево, право , низ , верх) на 30px */
+    padding: 30px 30px 30px 20px;
+}
+
+.content_header_text {
+    margin-top: 10px;
+}
+
+.categories {
+    /* выравниваем наши элементы в одну строку */
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.category {
+    width: 30%;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.category_text {
+    margin-top: 13px;
+}
+
+.about_author {
+    margin-left: 20px;
+}
+
+.item_title {
+    margin-bottom: 10px;
+}
+.item_title1 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
